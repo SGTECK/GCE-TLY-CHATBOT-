@@ -1,0 +1,56 @@
+[
+  {
+    "id": "faq-001",
+    "question": "What is the admission process for B.E.?",
+    "variations": ["how can i join gce tirunelveli", "admission process", "how to apply", "எப்படி சேர்க்கை பெறுவது"],
+    "answer": "B.E. admission is through TNEA counselling, followed by college and branch preference selection and document verification.",
+    "category": "ADMISSIONS",
+    "source": "https://gcetly.ac.in/admissionprocess.php",
+    "lastVerified": "2026-08-07"
+  },
+  {
+    "id": "faq-002",
+    "question": "Is lateral entry available?",
+    "variations": ["lateral entry", "diploma lateral entry"],
+    "answer": "Yes, lateral entry is available for diploma and B.Sc. candidates through the relevant admission route.",
+    "category": "ADMISSIONS",
+    "source": "https://gcetly.ac.in/admissionprocess.php",
+    "lastVerified": "2026-08-07"
+  },
+  {
+    "id": "faq-003",
+    "question": "What are the B.E. courses available?",
+    "variations": ["what courses are offered", "be courses", "what departments are there"],
+    "answer": "The college offers Civil, Mechanical, EEE, ECE, CSE, Electronics & Instrumentation, and Industrial Biotechnology programs.",
+    "category": "ACADEMICS",
+    "source": "https://gcetly.ac.in/academicprograms.php",
+    "lastVerified": "2026-08-07"
+  },
+  {
+    "id": "faq-004",
+    "question": "What is the hostel fee structure?",
+    "variations": ["hostel fees", "what is hostel fee", "hostel charges"],
+    "answer": "The published annual hostel fee is around Rs.14,350, excluding separate mess charges billed monthly.",
+    "category": "HOSTEL",
+    "source": "https://gcetly.ac.in/hostel.php",
+    "lastVerified": "2026-08-07"
+  },
+  {
+    "id": "faq-005",
+    "question": "Who is the principal?",
+    "variations": ["current principal", "principal name", "who heads the college"],
+    "answer": "The current principal is Dr. P. Latha, M.E., Ph.D. The official website lists the current principal and prior leaders on the homepage.",
+    "category": "GENERAL_INFORMATION",
+    "source": "https://gcetly.ac.in/index.php",
+    "lastVerified": "2026-08-07"
+  },
+  {
+    "id": "faq-006",
+    "question": "How can I contact the college?",
+    "variations": ["contact details", "college phone number", "how can i contact gce tly"],
+    "answer": "You can contact the college at 0462-2552450 or 0462-2552448, or email principal@gcetly.ac.in.",
+    "category": "CONTACT",
+    "source": "https://gcetly.ac.in/contactus.php",
+    "lastVerified": "2026-08-07"
+  }
+]

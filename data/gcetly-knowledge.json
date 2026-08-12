@@ -1,0 +1,72 @@
+[
+  {
+    "id": "kb-general-001",
+    "sourceUrl": "https://gcetly.ac.in/about.php",
+    "pageTitle": "About GCE-TLY",
+    "category": "GENERAL_INFORMATION",
+    "content": "Government College of Engineering, Tirunelveli (GCE-TLY) is an autonomous institution affiliated with Anna University. It is located in Tirunelveli, Tamil Nadu and is approved by AICTE and DOTE.",
+    "lastChecked": "2026-08-07",
+    "sourceType": "official_website",
+    "priority": 1
+  },
+  {
+    "id": "kb-admissions-001",
+    "sourceUrl": "https://gcetly.ac.in/admissionprocess.php",
+    "pageTitle": "Admission Process",
+    "category": "ADMISSIONS",
+    "content": "UG admission follows TNEA counselling. PG admission uses GATE/TANCET through the common admission procedure. Lateral entry is available for eligible diploma and B.Sc. candidates.",
+    "lastChecked": "2026-08-07",
+    "sourceType": "official_website",
+    "priority": 1
+  },
+  {
+    "id": "kb-academics-001",
+    "sourceUrl": "https://gcetly.ac.in/academicprograms.php",
+    "pageTitle": "Academic Programs",
+    "category": "ACADEMICS",
+    "content": "The college offers Civil, Mechanical, EEE, ECE, CSE, Electronics & Instrumentation, and Industrial Biotechnology programs as undergraduate courses, with several postgraduate programs as well.",
+    "lastChecked": "2026-08-07",
+    "sourceType": "official_website",
+    "priority": 1
+  },
+  {
+    "id": "kb-hostel-001",
+    "sourceUrl": "https://gcetly.ac.in/hostel.php",
+    "pageTitle": "Hostel Information",
+    "category": "HOSTEL",
+    "content": "Hostel accommodation is available with separate facilities for boys and girls. The published annual hostel fee is about Rs.14,350, excluding mess charges which are billed separately each month.",
+    "lastChecked": "2026-08-07",
+    "sourceType": "official_website",
+    "priority": 1
+  },
+  {
+    "id": "kb-contact-001",
+    "sourceUrl": "https://gcetly.ac.in/contactus.php",
+    "pageTitle": "Contact Details",
+    "category": "CONTACT",
+    "content": "The principal office can be reached at 0462-2552450 and principal@gcetly.ac.in. The general college contact number is 0462-2552450.",
+    "lastChecked": "2026-08-07",
+    "sourceType": "official_website",
+    "priority": 1
+  },
+  {
+    "id": "kb-placement-001",
+    "sourceUrl": "https://gcetly.ac.in/placement.php",
+    "pageTitle": "Placement Cell",
+    "category": "PLACEMENTS",
+    "content": "The college has a placement cell that supports internships and job opportunities for students. Placement data and recruiters are published by the college on the placement page.",
+    "lastChecked": "2026-08-07",
+    "sourceType": "official_website",
+    "priority": 1
+  },
+  {
+    "id": "kb-research-001",
+    "sourceUrl": "https://gcetly.ac.in/research.php",
+    "pageTitle": "Research Activities",
+    "category": "RESEARCH",
+    "content": "The college supports research, funded projects, and innovation activities through its research and development initiatives and departments.",
+    "lastChecked": "2026-08-07",
+    "sourceType": "official_website",
+    "priority": 1
+  }
+]
