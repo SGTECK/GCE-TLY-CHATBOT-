@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 
 function renderInline(text: string, keyPrefix: string): React.ReactNode[] {
@@ -27,9 +25,7 @@ export default function MarkdownLite({ text }: { text: string }) {
           <thead>
             <tr>
               {header.map((h, i) => (
-                <th key={i} className="border border-slate-300 dark:border-slate-600 px-2 py-1 text-left">
-                  {h}
-                </th>
+                <th key={i} className="border border-slate-300 dark:border-slate-600 px-2 py-1 text-left">{h}</th>
               ))}
             </tr>
           </thead>
@@ -37,9 +33,7 @@ export default function MarkdownLite({ text }: { text: string }) {
             {body.map((row, ri) => (
               <tr key={ri}>
                 {row.map((c, ci) => (
-                  <td key={ci} className="border border-slate-300 dark:border-slate-600 px-2 py-1">
-                    {c}
-                  </td>
+                  <td key={ci} className="border border-slate-300 dark:border-slate-600 px-2 py-1">{c}</td>
                 ))}
               </tr>
             ))}
@@ -53,35 +47,20 @@ export default function MarkdownLite({ text }: { text: string }) {
   lines.forEach((line, idx) => {
     const trimmed = line.trim();
     if (/^\|.*\|$/.test(trimmed)) {
-      const cells = trimmed
-        .split("|")
-        .map((c) => c.trim())
-        .filter((c, i, arr) => !(i === 0 && c === "") && !(i === arr.length - 1 && c === ""));
+      const cells = trimmed.split("|").map((c) => c.trim()).filter((c, i, arr) => !(i === 0 && c === "") && !(i === arr.length - 1 && c === ""));
       tableRows.push(cells);
       return;
     }
     flushTable();
 
     if (/^\d+\.\s+/.test(trimmed)) {
-      blocks.push(
-        <li key={idx} className="ml-4 list-decimal">
-          {renderInline(trimmed.replace(/^\d+\.\s+/, ""), `li-${idx}`)}
-        </li>
-      );
+      blocks.push(<li key={idx} className="ml-4 list-decimal">{renderInline(trimmed.replace(/^\d+\.\s+/, ""), `li-${idx}`)}</li>);
     } else if (/^-\s+/.test(trimmed)) {
-      blocks.push(
-        <li key={idx} className="ml-4 list-disc">
-          {renderInline(trimmed.replace(/^-\s+/, ""), `li-${idx}`)}
-        </li>
-      );
+      blocks.push(<li key={idx} className="ml-4 list-disc">{renderInline(trimmed.replace(/^-\s+/, ""), `li-${idx}`)}</li>);
     } else if (trimmed === "") {
       blocks.push(<div key={idx} className="h-1.5" />);
     } else {
-      blocks.push(
-        <p key={idx} className="my-0.5">
-          {renderInline(trimmed, `p-${idx}`)}
-        </p>
-      );
+      blocks.push(<p key={idx} className="my-0.5">{renderInline(trimmed, `p-${idx}`)}</p>);
     }
   });
   flushTable();

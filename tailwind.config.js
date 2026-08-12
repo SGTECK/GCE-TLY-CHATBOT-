@@ -27,10 +27,8 @@ module.exports = {
         tamil: ["Noto Sans Tamil", "Inter", "sans-serif"],
       },
       backgroundImage: {
-        "blueprint-grid":
-          "linear-gradient(rgba(47,143,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(47,143,255,0.05) 1px, transparent 1px)",
-        "blueprint-grid-dark":
-          "linear-gradient(rgba(47,143,255,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(47,143,255,0.07) 1px, transparent 1px)",
+        "blueprint-grid": "linear-gradient(rgba(47,143,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(47,143,255,0.05) 1px, transparent 1px)",
+        "blueprint-grid-dark": "linear-gradient(rgba(47,143,255,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(47,143,255,0.07) 1px, transparent 1px)",
       },
       backgroundSize: {
         blueprint: "18px 18px",

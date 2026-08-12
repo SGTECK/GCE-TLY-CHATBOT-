@@ -40,7 +40,7 @@ export async function POST(req: NextRequest) {
     await fs.appendFile(LOG_FILE, JSON.stringify(entry) + "\n", "utf-8");
   } catch (err) {
     return NextResponse.json(
-      { error: "Could not persist feedback on this deployment (read-only filesystem?). See app/api/feedback/route.ts.", detail: err instanceof Error ? err.message : String(err) },
+      { error: "Could not persist feedback on this deployment.", detail: err instanceof Error ? err.message : String(err) },
       { status: 500 }
     );
   }

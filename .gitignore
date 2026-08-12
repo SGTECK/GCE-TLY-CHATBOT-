@@ -1,9 +1,11 @@
-node_modules/
-.next/
-out/
-.env
+node_modules
+.next
+out
 .env.local
+.env
 *.log
-data/crawled/
-data/feedback/
 .DS_Store
+npm-debug.log*
+coverage
+
+data/feedback/

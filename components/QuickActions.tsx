@@ -1,11 +1,6 @@
 "use client";
 
-export interface QuickAction {
-  emoji: string;
-  labelEn: string;
-  labelTa: string;
-  question: string;
-}
+export interface QuickAction { emoji: string; labelEn: string; labelTa: string; question: string; }
 
 export const QUICK_ACTIONS: QuickAction[] = [
   { emoji: "🎓", labelEn: "Admissions", labelTa: "சேர்க்கை", question: "What is the admission process?" },
@@ -22,27 +17,13 @@ export const QUICK_ACTIONS: QuickAction[] = [
   { emoji: "🏢", labelEn: "Facilities", labelTa: "வசதிகள்", question: "What facilities are available on campus?" },
 ];
 
-export default function QuickActions({
-  onPick,
-  language,
-}: {
-  onPick: (question: string) => void;
-  language: "en" | "ta";
-}) {
+export default function QuickActions({ onPick, language }: { onPick: (question: string) => void; language: "en" | "ta"; }) {
   return (
     <div className="grid grid-cols-3 gap-2 px-3 pb-2">
       {QUICK_ACTIONS.map((a) => (
-        <button
-          key={a.labelEn}
-          onClick={() => onPick(a.question)}
-          aria-label={`Ask: ${a.question}`}
-          className="flex flex-col items-center gap-1 rounded-2xl px-1.5 py-3 text-center transition
-                     bg-surface border border-white/[0.06] hover:border-accent/40 hover:bg-surfaceRaised"
-        >
+        <button key={a.labelEn} onClick={() => onPick(a.question)} aria-label={`Ask: ${a.question}`} className="flex flex-col items-center gap-1 rounded-2xl px-1.5 py-3 text-center transition bg-surface border border-white/[0.06] hover:border-accent/40 hover:bg-surfaceRaised">
           <span className="text-lg leading-none" aria-hidden="true">{a.emoji}</span>
-          <span className="text-[10px] font-medium text-slate-200 leading-tight">
-            {language === "ta" ? a.labelTa : a.labelEn}
-          </span>
+          <span className="text-[10px] font-medium text-slate-200 leading-tight">{language === "ta" ? a.labelTa : a.labelEn}</span>
         </button>
       ))}
     </div>
