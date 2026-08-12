@@ -1,0 +1,36 @@
+{
+  "name": "gcetly-ai-assistant",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Official AI Assistant for Government College of Engineering, Tirunelveli (GCE-TLY)",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "crawl": "tsx scripts/crawl-gcetly.ts",
+    "update-knowledge": "tsx scripts/update-knowledge.ts",
+    "test": "tsx tests/test-questions.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "lucide-react": "^0.441.0",
+    "next": "14.2.15",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.1",
+    "autoprefixer": "^10.4.20",
+    "cheerio": "^1.0.0",
+    "postcss": "^8.4.45",
+    "tailwindcss": "^3.4.10",
+    "tsx": "^4.19.1",
+    "typescript": "^5.5.4"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  }
+}

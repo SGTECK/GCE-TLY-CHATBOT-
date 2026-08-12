@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+:lang(ta) {
+  font-family: "Noto Sans Tamil", "Inter", sans-serif;
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-paper/90 dark:bg-bg border border-black/5 dark:border-white/[0.06];
+  }
+
+  .blueprint-bg {
+    background-image: theme("backgroundImage.blueprint-grid");
+    background-size: theme("backgroundSize.blueprint");
+  }
+  .dark .blueprint-bg {
+    background-image: theme("backgroundImage.blueprint-grid-dark");
+  }
+
+  .shimmer-line {
+    background: linear-gradient(90deg, rgba(47,143,255,0.10) 25%, rgba(47,143,255,0.22) 37%, rgba(47,143,255,0.10) 63%);
+    background-size: 200% 100%;
+    animation: shimmer 1.6s linear infinite;
+  }
+  .dark .shimmer-line {
+    background: linear-gradient(90deg, rgba(47,143,255,0.14) 25%, rgba(47,143,255,0.28) 37%, rgba(47,143,255,0.14) 63%);
+    background-size: 200% 100%;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: rgba(47, 143, 255, 0.35);
+    border-radius: 999px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
